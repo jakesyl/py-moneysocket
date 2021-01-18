@@ -32,6 +32,6 @@ jobs:
         with:
           context: ..
           push: true
-          tags: ghcr.io/jakesyl/py-moneysocket:1.0.0:latest
+          tags: ghcr.io/jakesyl/py-moneysocket:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
