@@ -30,7 +30,8 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: contrib/
+          context: .
+          file: ./contrib/Dockerfile
           push: true
           tags: ghcr.io/jakesyl/py-moneysocket:latest
           cache-from: type=local,src=/tmp/.buildx-cache
